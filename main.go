@@ -3,6 +3,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -23,6 +24,8 @@ func main() {
 
 	// Initialize the routes
 	initializeRoutes()
+
+	log.Printf("%d", 10)
 
 	// Start serving the application
 	router.Run()
